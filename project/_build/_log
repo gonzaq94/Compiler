@@ -1,0 +1,8 @@
+### Starting build.
+# Target: pfxVM2.ml.depends, tags: { debug, explain, extension:ml, file:pfxVM2.ml, ocaml, ocamldep, quiet, traverse, use_menhir, warn_a }
+/usr/bin/ocamldep.opt -modules pfxVM2.ml > pfxVM2.ml.depends
++ /usr/bin/ocamldep.opt -modules pfxVM2.ml > pfxVM2.ml.depends
+File "pfxVM2.ml", line 17, characters 6-10:
+Error: Syntax error
+Command exited with code 2.
+# Compilation unsuccessful.

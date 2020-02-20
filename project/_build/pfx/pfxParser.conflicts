@@ -1,0 +1,25 @@
+
+** Conflict (reduce/reduce) in state 22.
+** Token involved: #
+** This state is reached from program after reading:
+
+INT EOF 
+
+** The derivations that appear below have the following common factor:
+** (The question mark symbol (?) represents the spot where the derivations begin to differ.)
+
+program // lookahead token is inherited
+(?)
+
+** In state 22, looking ahead at #, reducing production
+** expr -> EOF 
+** is permitted because of the following sub-derivation:
+
+INT expr // lookahead token is inherited
+    EOF . 
+
+** In state 22, looking ahead at #, reducing production
+** program -> INT EOF 
+** is permitted because of the following sub-derivation:
+
+INT EOF . 

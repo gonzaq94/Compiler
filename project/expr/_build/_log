@@ -1,0 +1,20 @@
+### Starting build.
+# Target: exprToPfx.ml.depends, tags: { extension:ml, file:exprToPfx.ml, ocaml, ocamldep, quiet }
+/usr/bin/ocamldep.opt -modules exprToPfx.ml > exprToPfx.ml.depends
+# Target: exprToPfx.mli.depends, tags: { extension:mli, file:exprToPfx.mli, ocaml, ocamldep, quiet }
+/usr/bin/ocamldep.opt -modules exprToPfx.mli > exprToPfx.mli.depends # cached
+# Target: exprAst.mli.depends, tags: { extension:mli, file:exprAst.mli, ocaml, ocamldep, quiet }
+/usr/bin/ocamldep.opt -modules exprAst.mli > exprAst.mli.depends # cached
+# Target: binOp.mli.depends, tags: { extension:mli, file:binOp.mli, ocaml, ocamldep, quiet }
+/usr/bin/ocamldep.opt -modules binOp.mli > binOp.mli.depends # cached
+# Target: binOp.cmi, tags: { byte, compile, extension:mli, file:binOp.mli, interf, ocaml, quiet }
+/usr/bin/ocamlc.opt -c -o binOp.cmi binOp.mli # cached
+# Target: exprAst.cmi, tags: { byte, compile, extension:mli, file:exprAst.mli, interf, ocaml, quiet }
+/usr/bin/ocamlc.opt -c -o exprAst.cmi exprAst.mli # cached
+# Target: exprToPfx.cmi, tags: { byte, compile, extension:mli, file:exprToPfx.mli, interf, ocaml, quiet }
+/usr/bin/ocamlc.opt -c -o exprToPfx.cmi exprToPfx.mli
++ /usr/bin/ocamlc.opt -c -o exprToPfx.cmi exprToPfx.mli
+File "exprToPfx.mli", line 2, characters 37-51:
+Error: Unbound module PfxAst
+Command exited with code 2.
+# Compilation unsuccessful.
